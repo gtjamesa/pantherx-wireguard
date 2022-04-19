@@ -116,7 +116,7 @@ create_wireguard_keys() {
 install_packages() {
   # Add Debian back-ports repository
   if [[ "${OS}" == "debian" ]]; then
-    echo 'deb http://deb.debian.org/debian buster-backports main contrib non-free' > /etc/apt/sources.list.d/buster-backports.list
+    echo 'deb http://deb.debian.org/debian buster-backports main' > /etc/apt/sources.list.d/buster-backports.list
   fi
 
   # not installing ufw here
